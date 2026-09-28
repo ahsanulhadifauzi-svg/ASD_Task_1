@@ -4,8 +4,8 @@ using namespace std;
 
 
 /** WRITE DOWN YOUR INFORMATION HERE */
-string name = ""; // put your name here
-string ID = ""; // put your student id here
+string name = "Ahsanul Hadi Fauzi"; // put your name here
+string ID = "103012500310"; // put your student id here
 int group_id = 8; // your Group Number here (1-8)
 
 
@@ -103,7 +103,8 @@ void insert_last(int arr[], int &n, int x) {
 
     // YOUR CODES HERE
     //-----------------------
-
+    arr[n] = x;
+    n++;
 
     //-----------------------
 }
@@ -163,18 +164,22 @@ string group_and_average(int arr[], int n) {
     arr : input array
     n   : number of element inside array
     */
-    int total = 0,tampilkan ;
-    float avarage ;
+    int total = 0;
+    string hasil = "";
     // YOUR CODES HERE
     //-----------------------
-    for (i =0 ; i < n ;i ++) {
-        total = total + arr[i] ;
-        
+
+    for (int i = 0; i < n; i++) {
+        hasil =hasil + to_string(arr[i]) + " ";
+        total =total + arr[i];
     }
-    
-    stri avarage = total / n;
+
+    float average = (float) total / n;
+
+    hasil =hasil + "Average: " + to_string(average);
+
     //-----------------------
-    return "avagare";
+    return hasil;
 }
 
 

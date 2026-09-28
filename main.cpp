@@ -6,7 +6,7 @@ using namespace std;
 /** WRITE DOWN YOUR INFORMATION HERE */
 string name = ""; // put your name here
 string ID = ""; // put your student id here
-int group_id = 0; // your Group Number here (1-8)
+int group_id = 8; // your Group Number here (1-8)
 
 
 /** FUNCTIONS LIST, DO NOT MODIFY THESE */
@@ -163,13 +163,18 @@ string group_and_average(int arr[], int n) {
     arr : input array
     n   : number of element inside array
     */
-
+    int total = 0,tampilkan ;
+    float avarage ;
     // YOUR CODES HERE
     //-----------------------
-
-
+    for (i =0 ; i < n ;i ++) {
+        total = total + arr[i] ;
+        
+    }
+    
+    stri avarage = total / n;
     //-----------------------
-    return "";
+    return "avagare";
 }
 
 
